@@ -9,52 +9,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/j-icon" href="/j.ico">
 <style>
-
-  #myVideo {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-.p {
-  border-right: solid 2px #2196f3;
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
-  font-size: 50px;
-  color: #2196f3;
-  margin: 6px;
-  padding: 0;
-  animation: animated-text 4s steps(12,end) 1s 1 normal both,
-             animated-cursor 600ms steps(12,end) infinite;
-}
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 365px;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: #2196f3;}
-  to{border-right-color: transparent;}
-}
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+#grad {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(33, 150, 243));
+}
 </style>
-
-<video id= myVideo autoplay loop muted playsinline> 
-  <source src="sky.mp4" type="video/mp4">
-</video>
-
 <body id="grad">
 
 <!-- Page Container -->
@@ -62,16 +21,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-    <div style="padding: 10px; width: 450px">
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <p class="p">Janakan Siva</p>
-      </div>
-   </div>
-    
+  
     <!-- Left Column -->
     <div class="w3-third">
     
       <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="IMG.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Janakan Siva</h2>
+          </div>
+        </div>
         <div class="w3-container">
           <div style= "padding-top:10px">
           <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-blue"></i>B.Eng Computer Candidate</p>
@@ -215,23 +175,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Computer Cooler</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2021</h6>
-          <p>Developed a system which cools my Macbook when it overheats during peak work hours. I used several IoT tools and C++ programming to complete this</p>
+          <p>A system which cools my Macbook when it overheats during work. I utilized several IoT tools and C++ programming to accomplish this</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Exercise Tracking Application</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2021</h6>
-          <p>Used the MERN stack (MongoDB, Express.js, React.js, and Node.js) to track daily fitness accomplishments</p><br>
+          <p>Utilized the MERN stack (MongoDB, Express.js, React.js, and Node.js) to learn about full-stack development</p><br>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Wired-In</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-blue w3-round">Current</span></h6>
-          <p>In progression: developing an application which will act as a student hub for virtual academic environments</p><br>
+          <p>In progression: creating a full-stack application which will act as a student hub for studying / focusing</p><br>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Where's My Wallet?</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-blue w3-round">Current</span></h6>
-          <p>To develop: personal investment portfolio which keeps track of all my investments from various banks and issuers and provide recommendations by a certain time</p><br>
+          <p>To develop: personal investment portfolio (Python, Tkinter/Django, Pytorch...) which keeps track of all my investments from various banks and issuers and provide recommendations to acheive a wallet by a certain time</p><br>
         </div>
       </div>
       
@@ -300,7 +260,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <ul><li>Object Oriented Eng Analysis and Design</li></ul>
           <ul><li>Database Systems</li></ul>
           <ul><li>Software Systems</li></ul>
-          <br>
+          <ul><li>Computer Programming Fundamentals</li></ul>
+          <ul><li>Operating Systems</li></ul>
+          <ul><li>Computer Organization and Architecture</li></ul>
+          <ul><li>Microprocessor Systems</li></ul>
+          <ul><li>Probability and Stochastic Processes</li></ul>
+          <ul><li>Calculus I, II, III</li></ul>
+
         </div>
       </div>
 
@@ -313,12 +279,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-center w3-margin-top w3-text-white" >
+<footer class="w3-container w3-center w3-margin-top" >
+  <p>Network</p>
   <!-- Instragram button not in use -->
   <!-- <a href= "" ><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
   <!-- <a href= "https://twitter.com/JSivaloganathan"><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
-  <a href="https://www.linkedin.com/in/janakan2466/"><i style="font-size: 150%; margin: 10px" class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <a href="https://github.com/Janakan2466"><i style="font-size: 150%; margin: 10px" class="fa fa-github w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/janakan2466/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/Janakan2466"><i class="fa fa-github w3-hover-opacity"></i></a>
 </p>
 </footer>
 
